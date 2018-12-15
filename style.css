@@ -1,0 +1,102 @@
+@font-face {
+  font-family: 'Alegreya';
+  font-weight: normal;
+  src: url("./assets/fonts/Alegreya-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Alegreya';
+  font-weight: bold;
+  src: url("./assets/fonts/Alegreya-Bold.ttf"); }
+
+@font-face {
+  font-family: 'Alegreya Sans';
+  font-weight: normal;
+  src: url("./assets/fonts/AlegreyaSans-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Alegreya Sans';
+  font-weight: bold;
+  src: url("./assets/fonts/AlegreyaSans-Bold.ttf"); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-size: 200%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #eee;
+  font-family: 'Alegreya Sans'; }
+
+main {
+  flex: 1 0 0;
+  align-self: stretch;
+  padding: 3rem 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+
+ul {
+  margin: 1em 0; }
+
+ul li {
+  line-height: 3rem; }
+
+p, ul {
+  max-width: 50rem; }
+
+#nav {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  height: 3rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #ccc;
+  padding: 0 1rem;
+  line-height: 3rem; }
+  #nav, #nav a {
+    color: white; }
+
+.arrow {
+  display: block;
+  padding: 0 1rem 0.2rem 1rem;
+  text-decoration: none;
+  font-size: 180%; }
+  .arrow:hover {
+    background-color: rgba(255, 255, 255, 0.5); }
+
+h1, h2, h3, h4, h5 {
+  font-family: Alegreya;
+  text-align: center; }
+
+h1 {
+  font-size: 300%; }
+
+.separator {
+  height: 3rem; }
+
+#page-1 {
+  background-color: #319cc2;
+  color: white; }
+  #page-1 h2 {
+    margin-bottom: 2em; }
+
+.cover {
+  display: block;
+  position: absolute;
+  background-size: cover;
+  background-position: center center;
+  top: 0;
+  bottom: 3rem;
+  right: 0;
+  left: 0; }
+
+video {
+  width: 100%;
+  height: 90%; }
