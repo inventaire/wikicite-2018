@@ -27,7 +27,10 @@
   padding: 0;
 }
 
-$light-blue: #319cc2;
+:root{
+  --light-blue: #319cc2;
+  --controls-height: 3rem;
+}
 
 body{
   font-size: 200%;
@@ -38,12 +41,10 @@ body{
   font-family: 'Alegreya Sans';
 }
 
-$controls-height: 3rem;
-
 main{
   flex: 1 0 0;
   align-self: stretch;
-  padding: $controls-height 1em;
+  padding: var(--controls-height) 1em;
   // min-height: 90vh;
   display: flex;
   flex-direction: column;
@@ -68,13 +69,13 @@ p, ul{
   position: fixed;
   right: 0;
   bottom: 0;
-  height: $controls-height;
+  height: var(--controls-height);
   display: flex;
   justify-content: flex-end;
   align-items: center;
   background-color: #ccc;
   padding: 0 1rem;
-  line-height: $controls-height;
+  line-height: var(--controls-height);
   &, a{
     color: white;
   }
@@ -104,11 +105,12 @@ h1{
 }
 
 #page-1{
-  background-color: $light-blue;
+  background-color: var(--light-blue);
   color: white;
-  h2{
-    margin-bottom: 2em;
-  }
+}
+
+#page-1 h2{
+  margin-bottom: 2em;
 }
 
 .cover{
@@ -117,7 +119,7 @@ h1{
   background-size: cover;
   background-position: center center;
   top: 0;
-  bottom: $controls-height;
+  bottom: var(--controls-height);
   right: 0;
   left: 0;
 }
